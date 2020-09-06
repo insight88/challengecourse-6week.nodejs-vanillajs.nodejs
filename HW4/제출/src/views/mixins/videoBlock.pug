@@ -1,0 +1,6 @@
+mixin videoBlock(movie = {})
+    .videoBlock
+        h1.videoBlock__title=movie.title
+        h3.videoBlock__summary=movie.summary
+        h3.videoBlock__genres=movie.genres
+            //- a(href=routes.videoDetail(movie.id))

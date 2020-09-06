@@ -1,0 +1,11 @@
+extends templates/layout
+
+block content
+    h1 Create
+    form(action="/", method="post")
+        input(type="text", placeholder="Title", name="title", value=video.title)
+        input(type="number", placeholder="Year", name="year", value=video.year)
+        input(type="number", placeholder="Rating", name="rating", value=video.rating)
+        textarea(placeholder="Synopsis", name="synopsis", value=video.synopsis)
+        input(type="text", placeholder="Genres", name="genres", value=video.genres)
+        input(type="submit", value="Add Movie")

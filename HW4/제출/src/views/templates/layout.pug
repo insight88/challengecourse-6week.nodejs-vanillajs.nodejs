@@ -1,0 +1,14 @@
+include mixins/videoBlock
+
+doctype html
+html
+    head
+        title  #{pageTitle} | #{siteName}
+    body
+        header
+            h1 Movies!
+        main
+            each item in videos
+              +videoBlock({
+                  title:item.title,
+              }) 

@@ -1,0 +1,101 @@
+body {
+  width: 100%;
+  font-family: sans-serif;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videoPlayer__controls {
+  width: 560px;
+  background-color: #7f8c8d;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 44px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+video:hover ~ .videoPlayer__controls {
+  opacity: 0.6;
+}
+
+.videoPlayer__controls:hover {
+  opacity: 0.6;
+}
+
+.controls__playBtn {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.controls__timebar-all {
+  height: 10px;
+  width: 350px;
+  background-color: #ecf0f1;
+  margin: 10px;
+}
+
+.controls__timebar-now {
+  height: 10px;
+  /* width: 시간에 따라 */
+  background-color: black;
+  margin: 10px;
+  position: absolute;
+  bottom: 5px;
+  opacity: 0;
+}
+
+.videoPlayer__column {
+  display: flex;
+  align-items: center;
+}
+
+.fa-cog {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.controls__volume {
+  position: absolute;
+  padding: 0;
+  top: -55px;
+  left: 456px;
+  transform: rotate(-90deg);
+  width: 80px;
+  opacity: 0;
+}
+
+.controls__volumeBtn {
+  font-size: 20px;
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.controls__volumeBtn i {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.controls__volumeBtn:hover ~ .controls__volume {
+  opacity: 1;
+}
+
+.controls__volume:hover {
+  opacity: 1;
+}
+
+.controls__timenow {
+  width: 360px;
+}
+
+.fa-cog {
+  margin-top: 3px;
+}
