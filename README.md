@@ -8,7 +8,7 @@
 
 ## 과제 내용
 
-- 총 10번의 퀴즈, 12번의 과제  
+### 총 10번의 퀴즈, 12번의 과제  
 - HW 1 : routing, redirect, middleware
 - HW 2 : Router, Controller 분리, RESTful
 - HW 3 : Views with pug
