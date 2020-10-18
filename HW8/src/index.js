@@ -30,5 +30,4 @@ app.get("/", (req, res) => {
   }
 });
 
-// Codesanbox does not need PORT :)
-app.listen(() => console.log(`Listening!`));
+app.listen(4000, () => console.log(`Listening!`));
